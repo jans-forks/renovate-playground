@@ -19,7 +19,7 @@ jobs:
           renovate-version: 38.101.1-full
           renovate-image: ghcr.io/renovatebot/renovate
         env:
-          RENOVATE_AUTODISCOVER_FILTER: "jans-forks/renovate-reporoduction-31778"
+          RENOVATE_AUTODISCOVER_FILTER: "jans-forks/renovate-playground"
           RENOVATE_OPTIMIZE_FOR_DISABLED: 'true'
           RENOVATE_REQUIRE_CONFIG: 'required'
           RENOVATE_IGNORE_PR_AUTHOR: 'true'
