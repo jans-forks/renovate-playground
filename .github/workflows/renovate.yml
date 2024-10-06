@@ -23,7 +23,7 @@ jobs:
           RENOVATE_OPTIMIZE_FOR_DISABLED: 'true'
           RENOVATE_REQUIRE_CONFIG: 'required'
           RENOVATE_IGNORE_PR_AUTHOR: 'true'
-          RENOVATE_FORCE: 'true'
-          RENOVATE_FORCE_CLI: 'true'
+          # RENOVATE_FORCE: 'true'
+          # RENOVATE_FORCE_CLI: 'true'
           RENOVATE_AUTODISCOVER: "true"
           LOG_LEVEL: 'debug'
