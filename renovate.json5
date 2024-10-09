@@ -16,6 +16,10 @@
     {
       "matchDepNames": ["git_lib_pkg"],
       "versioning": "semver"
+    },
+    {
+      "matchDepNames": ["oban_pro"],
+      "registryUrl": "https://getoban.pro/repo"
     }
   ],
 }
