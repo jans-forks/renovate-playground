@@ -19,7 +19,7 @@
     },
     {
       "matchDepNames": ["oban_pro"],
-      "registryUrls": ["https://getoban.pro/","https://getoban.pro/repo/"]
+      "registryUrls": ["https://getoban.pro/repo/"]
     }
   ],
 }
