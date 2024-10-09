@@ -20,7 +20,7 @@ defmodule ElApp.MixProject do
 
   defp deps do
     [
-      {:lib_pkg, git: "https://github.com/jans-forks/elixir_lib", tag: "v0.1.0", app: false},
+      {:lib_pkg, git: "https://github.com/jans-forks/elixir_lib", tag: "== v0.3.0", app: false},
       {:oban_pro, "~> 0.11", repo: "oban"},
     ]
   end
