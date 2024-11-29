@@ -1,5 +1,6 @@
 {
   $schema: "https://docs.renovatebot.com/renovate-schema.json",
+
   extends: [
     "config:recommended"
   ],
@@ -11,18 +12,18 @@
       "groupName": "mix",
       "matchManagers": [
         "mix"
-      ],
+      ]
     },
     {
       "matchDepNames": [
-        "ref_lib_pkg"
+        "ref_lib_pkg",
         "ref_lib_tag",
         "ref_lib_branch"
         ],
       // "versioning": "semver"
-      // pinDigests: false,
-      datasource: "git-refs"
-    },
+       pinDigests: false
+      // datasource: "git-refs"
+    }
   ],
     customManagers: [
     {
@@ -30,10 +31,10 @@
       fileMatch: ["\\.github\/.*\\.ya?ml$"],
       matchStrings: [
         // with extract version
-       "# renovate: datasource=(?<datasource>[a-z-]+?) depName=(?<depName>[^\\s]+?)(?: (?:lookupName|packageName)=(?<packageName>[^\\s]+?))?(?: versioning=(?<versioning>[a-z-0-9]+?))?(?: extractVersion=(?<extractVersion>[^\\s]+?))?\\s+[A-Za-z0-9_-]+?\\s*:\\s*[\"']?(?<currentValue>[^\\s\"']+)[\"']?",
+       "# renovate: datasource=(?<datasource>[a-z-]+?) depName=(?<depName>[^\\s]+?)(?: (?:lookupName|packageName)=(?<packageName>[^\\s]+?))?(?: versioning=(?<versioning>[a-z-0-9]+?))?(?: extractVersion=(?<extractVersion>[^\\s]+?))?\\s+[A-Za-z0-9_-]+?\\s*:\\s*[\"']?(?<currentValue>[^\\s\"']+)[\"']?"
         // "# renovate: datasource=(?<datasource>[a-z-]+?) depName=(?<depName>[^\\s]+?)(?: (?:lookupName|packageName)=(?<packageName>[^\\s]+?))?(?: versioning=(?<versioning>[a-z-0-9]+?))?\\s+[A-Za-z0-9_-]+?\\s*:\\s*[\"']?(?<currentValue>[^\\s\"']+)[\"']?"
       ],
-      versioningTemplate: '{{#if versioning}}{{{versioning}}}{{else}}semver{{/if}}',
-    },
-  ],
+      versioningTemplate: '{{#if versioning}}{{{versioning}}}{{else}}semver{{/if}}'
+    }
+  ]
 }
