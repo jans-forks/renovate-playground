@@ -13,10 +13,16 @@
         "mix"
       ],
     },
-    // {
-    //   "matchDepNames": ["git_lib_pkg"],
-    //   "versioning": "semver"
-    // },
+    {
+      "matchDepNames": [
+        "ref_lib_pkg"
+        "ref_lib_tag",
+        "ref_lib_branch"
+        ],
+      // "versioning": "semver"
+      // pinDigests: false,
+      datasource: "git-refs"
+    },
   ],
     customManagers: [
     {
