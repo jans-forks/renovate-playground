@@ -14,16 +14,16 @@
         "mix"
       ]
     },
-    {
-      "matchDepNames": [
-        "ref_lib_pkg",
-        "ref_lib_tag",
-        "ref_lib_branch"
-        ],
-      // "versioning": "semver"
-       pinDigests: false
-      // datasource: "git-refs"
-    }
+//    {
+//      "matchDepNames": [
+//        "ref_lib_pkg",
+//        "ref_lib_tag",
+//        "ref_lib_branch"
+//        ]
+//      // "versioning": "semver"
+////       pinDigests: false
+//      // datasource: "git-refs"
+//    }
   ],
     customManagers: [
     {
